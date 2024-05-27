@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambola Ticket Generator - Host Interface</title>
+    <meta name="title" content="Tambola Ticket Generator - Host Interface">
+    <meta name="description" content="Generate Tambola tickets and host a game with up to 2 tickets.">
+    <meta name="google-site-verification" content="NWoSsIwXPpR8mSxysD26HnYnhTQOC9nmIpevX7aTJpM" />
+    <title>Tambola Ticket Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <label for="ticketCount">
+        Enter number of tickets (1 or 2), print the page and enjoy!
+        <input type="number" id="ticketCount" name="ticketCount" required min="1" max="2" value="1">
+    </label>
+    <div class="tickets"></div>
+    <div class="host-controls">
+        <h3>Host Controls: Generate Numbers</h3>
+        <button id="callNumber">Call Random Number</button>
+        <div class="called-number" id="calledNumberDisplay">Called Number: None</div>
+        <button id="toggleHostNumbers">Show Host Numbers Grid</button>
+        <div class="host-numbers">
+            <!-- Numbers from 1 to 90 will be generated here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
